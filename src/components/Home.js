@@ -1,7 +1,12 @@
+import styled from "styled-components"
+const Title = styled.h1`
+     color: gold;
+     `
+
 export default function Home () {
 return (
     <>
-    <h1>Home</h1>
+    <Title>Home</Title>
     </>
 )
 }

@@ -1,7 +1,12 @@
+import styled from "styled-components"
+const Title = styled.h1`
+     color: gold;
+     `
+
 export default function Contact () {
     return (
         <>
-        <h1>contact</h1>
+        <Title>contact</Title>
         </>
     )
     }

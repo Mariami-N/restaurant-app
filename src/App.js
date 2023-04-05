@@ -13,19 +13,22 @@ const Container = styled.div`
 background-color: black;
 width: 100%;
 height: 100%;
-margin-top: 0;
+padding-top: 50px;
 `;
+
 
 function App() {
   return (
     <>
-    <Header/>
-      <Routes>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='contact' element={<Contact/>}/> 
-        <Route path='menu' element={<Menu/>}/>
-      </Routes>
-    <footer>footer</footer>
+     <Container>
+        <Header/>
+          <Routes>
+            <Route path='/home' element={<Home/>}/>
+            <Route path='contact' element={<Contact/>}/> 
+            <Route path='menu' element={<Menu/>}/>
+          </Routes>
+      <Footer/>
+    </Container>
     </>
   );
 }
