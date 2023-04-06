@@ -9,7 +9,7 @@ export default function Footer () {
             color : "rgb(205, 175, 5)",
             textAlign: "center",
             marginTop: "100px",
-            fontFamily: "Pacifico"
+            fontFamily: "Roboto Slab"
         }}>  R e s t a u r a n t  <br></br>  
         <br></br>
          L  E  M  A  V  A  R  I  N  I  </h1>
@@ -25,7 +25,7 @@ export default function Footer () {
     color: white;
     font-size: 20px;
     text-align: center;
-    font-family: Pacifico;
+    font-family: Roboto Slab;
     margin-bottom: 50px;
    `
 
@@ -33,6 +33,6 @@ export default function Footer () {
     color: white;
     font-size: 20px;
     text-align: center;
-    font-family: Pacifico;
+    font-family: Roboto Slab;
     margin-top: 30px
     `

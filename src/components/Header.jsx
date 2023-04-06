@@ -25,7 +25,7 @@ export default function Header () {
     const TitleLi = styled.li`
         display: inline-block;
         margin-left: 200px;
-        font-family: Pacifico;
+        font-family: Roboto Slab;
         font-size: 40px;
         color: green;
         margin-bottom: 20px;
@@ -36,11 +36,9 @@ export default function Header () {
 
     const Header1 = styled.header`
     background-color: rgba(6, 6, 6,0.5);
-    position: relative;
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    z-index: 2;
     height: 100%
     padding-top: 50%;
     `
