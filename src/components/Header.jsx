@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 // import image from '../images/home.png'
 // import photo from'../images/letter.png'
@@ -5,17 +6,41 @@ import { NavLink } from "react-router-dom";
 export default function Header () {
     return (
         <>
+        <Header1>
          <nav>
-            <ul>
-                <li><NavLink to='Home'>Home</NavLink></li>  
+            <TitleUl>
+                <TitleLi><NavLink to='Home'>Home</NavLink></TitleLi>  
                {/* თუ გვინდა ფოტო homeს მაგივრად ვსვავთ პირდაპირ ამ ფოტოს<img src={image} alt="home" /> */}
-                <li><NavLink to='Contact'>Contact</NavLink></li>
+                <TitleLi><NavLink to='Contact'>Contact</NavLink></TitleLi>
                 {/* <img src={photo} alt="letter" /> */}
-                <li><NavLink to='Menu'>Menu</NavLink></li>
+                <TitleLi><NavLink to='Menu'>Menu</NavLink></TitleLi>
                 {/* <img src={img} alt="menu" /> */}
-                <li><NavLink to='Footer'>Footer</NavLink></li>
-            </ul>
+                <TitleLi><NavLink to='Footer'>Footer</NavLink></TitleLi>
+            </TitleUl>
         </nav>
+        </Header1>
         </>
     )
     }
+    const TitleLi = styled.li`
+        display: inline-block;
+        margin-left: 200px;
+        font-family: Pacifico;
+        font-size: 40px;
+        color: green;
+        margin-bottom: 20px;
+    `
+    const TitleUl = styled.ul`
+    margin-left: 200px;
+    `
+
+    const Header1 = styled.header`
+    background-color: rgba(6, 6, 6,0.5);
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 2;
+    height: 100%
+    padding-top: 50%;
+    `
