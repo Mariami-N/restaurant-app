@@ -15,7 +15,7 @@ export default function Header () {
                 {/* <img src={photo} alt="letter" /> */}
                 <TitleLi><NavLink to='Menu'>Menu</NavLink></TitleLi>
                 {/* <img src={img} alt="menu" /> */}
-                <TitleLi><NavLink to='Footer'>Footer</NavLink></TitleLi>
+                {/* <TitleLi><NavLink to='Footer'>Footer</NavLink></TitleLi> */}
             </TitleUl>
         </nav>
         </Header1>
@@ -31,7 +31,7 @@ export default function Header () {
         margin-bottom: 20px;
     `
     const TitleUl = styled.ul`
-    margin-left: 200px;
+    margin-left: 330px;
     `
 
     const Header1 = styled.header`
