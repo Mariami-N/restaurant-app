@@ -7,12 +7,11 @@ export default function Menu () {
         <>
         <div>
       {data.map((item) => (
-        
         <div className = "divstyle"
         key={item.id}>
           {/* ID: {item.id} */}
           {/* <p className='list'>Category: {item.category}</p>   */}
-          {/* <p className='list'>Status: {item.status}</p> */}
+          <p className='list1'> {item.status}</p>
          <div className='name'>
          <p className='list'> {item.name}</p>
          </div>

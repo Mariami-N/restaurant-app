@@ -23,13 +23,13 @@ export default function Header () {
                 </TitleLi>
                 <div className={`menu-container ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li>Main Dish</li>
-          <li>Side Dish</li>
-          <li>Dessert</li>
-          <li>Drink</li>
+        <Slideli><NavLink to='Menu/MainDish'>Main Dish</NavLink></Slideli> 
+        <Slideli><NavLink to='Menu/SideDish'>Side Dish</NavLink></Slideli> 
+        <Slideli><NavLink to='Menu/Dessert'>Dessert</NavLink></Slideli> 
+        <Slideli><NavLink to='Menu/Drink'>Drink</NavLink></Slideli> 
         </ul>
       </div>
-                <img className="cart" src={image} alt="cart" />
+            <img className="cart" src={image} alt="cart" />
             </TitleUl>
         </nav>
         </Header1>
@@ -50,10 +50,15 @@ export default function Header () {
 
     const Header1 = styled.header`
     background-color: rgba(6, 6, 6,0.5);
-    // top: 0 auto;
+    margin-top: 50px;
     display: inline-block;
     vertical-align: middle;
     width: 100%;
     height: 100%
     padding-top: 50%;
+    `
+
+    const Slideli = styled.li`
+    margin-left: 30px;
+    margin-top: 10px;
     `
