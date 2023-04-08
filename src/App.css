@@ -3,14 +3,22 @@
 a:-webkit-any-link {
     /* color: -webkit-link; */
     color: rgb(205, 175, 5);
-    cursor: pointer;
-    text-decoration: underline;
+    /* cursor: pointer; */
+    text-decoration: none;
+}
+a:-webkit-any-link:hover{
+    text-decoration: overline underline;
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    margin-left: 450px;
 }
 img{
     width: 1905px;
     height: 835px;
-    margin-top: 0;
-    
+    margin-top: 0 auto;
+    /* position: relative; */
 }
 Footer{
     /* display: flex;
@@ -20,7 +28,7 @@ Footer{
 }
 
 form{
-    background-color:rgb(126, 108, 2) ;
+    background-color:rgba(126, 108, 2, 0.5) ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +37,7 @@ form{
     height: 400px;
     gap: 10px;
     color: black;
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab';
     border-radius: 10px;
     margin-left: 770px;
     text-align: center;
@@ -45,6 +53,23 @@ textarea{
     width: 300px;
     height: 80px;
     
+}
+.divstyle{
+    background-color: rgb(2, 77, 5);
+    width: 550px;
+    height: 800px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 60px;
+    color: antiquewhite;
+    font-family: 'Roboto Slab';
+    border-radius: 25px;
+}
+.list {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 
