@@ -5,30 +5,32 @@ export default function Menu () {
   
     return (
         <>
-        <div style={{
-          backgroundColor: "yellow"
-        }}>
+        <div>
       {data.map((item) => (
         
         <div className = "divstyle"
         key={item.id}>
           {/* ID: {item.id} */}
-          <p className='list'>Category: {item.category}</p>  
-          <p className='list'>Status: {item.status}</p>
-         
-          <p className='list'>Name: {item.name}</p>
+          {/* <p className='list'>Category: {item.category}</p>   */}
+          {/* <p className='list'>Status: {item.status}</p> */}
+         <div className='name'>
+         <p className='list'> {item.name}</p>
+         </div>
+          
           <div>
           <Photo src={item.image} alt='img'/>
           </div>
-          
+          <div className='price'>
           <p className='list'>Price: {item.price} $</p>
+          </div>
+          
          
           
-          <div style={{
+          {/* <div style={{
             width: "500px"
           }}>
           <p className='list'>description: {item.description}</p>
-          </div>
+          </div> */}
           
           
         </div>
@@ -45,7 +47,6 @@ export default function Menu () {
  width: 500px;
  height: 350px;
  margin-left: 25px;
- margin-top: 25px;
 
  `
     
