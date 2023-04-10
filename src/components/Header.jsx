@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import image from '../images/cart.png'
 import { useState } from "react";
 // import image from '../images/home.png'
+
+
 export default function Header () {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
     
@@ -22,13 +24,21 @@ export default function Header () {
                     <NavLink to='Menu'onClick={() => setIsMenuOpen(!isMenuOpen)} >Menu</NavLink>
                 </TitleLi>
                 <div className={`menu-container ${isMenuOpen ? 'open' : ''}`}>
-        <ul>
-        <Slideli><NavLink to='Menu/MainDish'>Main Dish</NavLink></Slideli> 
-        <Slideli><NavLink to='Menu/SideDish'>Side Dish</NavLink></Slideli> 
-        <Slideli><NavLink to='Menu/Dessert'>Dessert</NavLink></Slideli> 
-        <Slideli><NavLink to='Menu/Drink'>Drink</NavLink></Slideli> 
-        </ul>
-      </div>
+                    <ul>
+                        <Slideli>
+                            <NavLink to='Menu/MainDish'>Main Dish</NavLink>
+                        </Slideli> 
+                        <Slideli>
+                            <NavLink to='Menu/SideDish'>Side Dish</NavLink>
+                        </Slideli> 
+                        <Slideli>
+                            <NavLink to='Menu/Dessert'>Dessert</NavLink>
+                        </Slideli> 
+                        <Slideli>
+                            <NavLink to='Menu/Drink'>Drink</NavLink>
+                        </Slideli> 
+                    </ul>
+                </div>
             <img className="cart" src={image} alt="cart" />
             </TitleUl>
         </nav>
@@ -49,7 +59,7 @@ export default function Header () {
     `
 
     const Header1 = styled.header`
-    background-color: rgba(6, 6, 6,0.5);
+    // background-color: rgba(6, 6, 6,0.5);
     margin-top: 50px;
     display: inline-block;
     vertical-align: middle;
