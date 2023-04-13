@@ -7,8 +7,7 @@ export default function Menu () {
         <>
 <div>
   {data.map((item) => (
-      <div className = "divstyle"
-      key={item.id}>
+      <div className = "divstyle" key={item.id}>
           {/* ID: {item.id} */}
           {/* <p className='list'>Category: {item.category}</p>   */}
         <p className='list1'> {item.status}</p>
@@ -23,7 +22,7 @@ export default function Menu () {
           <div className='price'>
             <p className='list'>Price: {item.price} $</p>
             <Details1>
-              <NavLink to='/details'>Details</NavLink>
+              <NavLink to={`/details/${item.id}`}>Details</NavLink>
             </Details1>
           </div>
 

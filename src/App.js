@@ -12,7 +12,7 @@ import MainDish from './components/MainDish';
 import SideDish from './components/SideDish';
 import Dessert from './components/Dessert';
 import Drink from './components/Drink';
-
+import data from './data.json'
 
 
 const Container = styled.div`
@@ -38,7 +38,7 @@ function App() {
             <Route path='Menu/SideDish' element={<SideDish/>}/>
             <Route path='Menu/Dessert' element={<Dessert/>}/>
             <Route path='Menu/Drink' element={<Drink/>}/>
-            <Route path="/details" element={<Details/>}/>
+            <Route path="/details/:id" element={ <Details data={data} />}/>
           </Routes>
       <Footer/>
       </BrowserRouter>

@@ -69,6 +69,18 @@ textarea{
     font-family: 'Roboto Slab';
     border-radius: 25px;
 }
+.divstyle1{
+  background-color: rgba(2, 77, 5, 0.5);
+  width: 550px;
+  height: 900px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-left: 60px;
+  color: antiquewhite;
+  font-family: 'Roboto Slab';
+  border-radius: 25px;
+}
 .list {
     display: inline-block;
     margin-left: 30px;
@@ -101,5 +113,21 @@ textarea{
 
 .menu-container.open {
   left: 1200px;
+}
+.category{
+  width: 500px;
+  height: 40px;
+  text-align:start;
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.description{
+  text-align: center;
+  width: 500px;
+  margin-left: 30px;
+}
+.container3{
+  background-color: yellow;
 }
 
