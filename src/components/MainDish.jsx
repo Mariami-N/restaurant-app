@@ -10,10 +10,10 @@ export default function MainDish (){
         <>
          <div className='container3'>
          {mainD.map((item) => (
-          <div  className='divstyle1' 
-          key={item.name}>
+          <div  className='divstyle1' key={item.name}>
              <div className='category'>
-                <p >{item.category}</p>
+                <p className='categoryitem'> # {item.category}</p>
+                <p className='list2'> {item.status}</p>
              </div>
             <div className='name'>
                 <h3 className='list'> {item.name}</h3>

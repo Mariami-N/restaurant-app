@@ -26,16 +26,16 @@ export default function Header () {
                 <div className={`menu-container ${isMenuOpen ? 'open' : ''}`}>
                     <ul>
                         <Slideli>
-                            <NavLink to='Menu/MainDish'>Main Dish</NavLink>
+                            <NavLink to='Menu/MainDish' onClick={() => setIsMenuOpen(false)}>Main Dish</NavLink>
                         </Slideli> 
                         <Slideli>
-                            <NavLink to='Menu/SideDish'>Side Dish</NavLink>
+                            <NavLink to='Menu/SideDish' onClick={() => setIsMenuOpen(false)}>Side Dish</NavLink>
                         </Slideli> 
                         <Slideli>
-                            <NavLink to='Menu/Dessert'>Dessert</NavLink>
+                            <NavLink to='Menu/Dessert' onClick={() => setIsMenuOpen(false)}>Dessert</NavLink>
                         </Slideli> 
                         <Slideli>
-                            <NavLink to='Menu/Drink'>Drink</NavLink>
+                            <NavLink to='Menu/Drink' onClick={() => setIsMenuOpen(false)}>Drink</NavLink>
                         </Slideli> 
                     </ul>
                 </div>

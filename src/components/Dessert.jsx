@@ -6,19 +6,33 @@ import styled from 'styled-components'
 export default function Dessert (){
     const mainD = data.filter(item => item.category === "Dessert");
     return(
+       
         <>
-        <div >
+         <div className='container3'>
          {mainD.map((item) => (
-          <div  className='divstyle' 
+          <div  className='divstyle4' 
           key={item.name}>
-            <p>{item.category}</p>
-            <h3>{item.name}</h3>
-            <Photo src={item.image} alt="item"/>
-            <p>{item.price} $ </p>
-            <p>{item.description}</p>
+             <div className='category'>
+                <p className='categoryitem'> # {item.category}</p>
+                <p className='list2'> {item.status}</p>
+             </div>
+            <div className='name'>
+                <h3 className='list'> {item.name}</h3>
+            </div>
+            <div>
+                <Photo src={item.image} alt="item"/>
+            </div>
+           <div className='price'>
+                <p className='list'>Price: {item.price} $ </p>
+           </div>
+            <div className='descriptionDessert'>
+                <p cl>{item.description}</p>
+            </div>
+            
           </div>
 ))}
     </div>
+    
         </>
     )
 }
