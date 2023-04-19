@@ -1,18 +1,23 @@
 import data from '../data.json'
- import styled from 'styled-components'
+import styled from 'styled-components'
 import { useParams } from 'react-router-dom';
 
 
-export default function Details ({data}){
-        const { id } = useParams();
-        const selectedItem = data.find((item) => item.id === id);
+export default function Details (){
+        const { Id } = useParams();
+        const selectedItem = data.find((item) => item.Id === Id);
+
+        if (!selectedItem) {
+                return <div>Dessert not found</div>;
+              }
+
     return (
             <>
         <div className='divstyle'>
-                <h1>{selectedItem?.name}</h1>
-                <img src={selectedItem?.image} alt="item" />
-                <p>Price: {selectedItem?.price} $</p>
-                <p>Description: {selectedItem?.description}</p>
+                <h1>{data.name}</h1>
+                <Photo src={data.image} alt="item" />
+                <p>Price: {data.price} $</p>
+                <p>Description: {data.description}</p>
         </div>
             </>
     )}

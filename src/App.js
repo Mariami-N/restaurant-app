@@ -38,7 +38,7 @@ function App() {
             <Route path='Menu/SideDish' element={<SideDish/>}/>
             <Route path='Menu/Dessert' element={<Dessert/>}/>
             <Route path='Menu/Drink' element={<Drink/>}/>
-            <Route path="/details/:id" element={ <Details data={data} />}/>
+            <Route path="/details/:id" element={ <Details/>}/>
           </Routes>
       <Footer/>
       </BrowserRouter>

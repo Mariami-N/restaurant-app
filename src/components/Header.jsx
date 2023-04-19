@@ -39,7 +39,8 @@ export default function Header () {
                         </Slideli> 
                     </ul>
                 </div>
-            <img className="cart" src={image} alt="cart" />
+                    {/* <img className="cart" src={image} alt="cart" /> */}
+                    
             </TitleUl>
         </nav>
         </Header1>

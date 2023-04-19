@@ -12,13 +12,15 @@ a:-webkit-any-link:hover{
 .cart{
     width: 50px;
     height: 50px;
-    margin-left: 450px;
+    margin-left: 400px;
+}
+.cartp{
+  /* margin-left: 450px; */
 }
 img{
     width: 1905px;
     height: 900px;
     margin-top: 0 auto;
-   
 }
 form{
     background-color:rgba(126, 108, 2, 0.5) ;
@@ -72,7 +74,7 @@ textarea{
 .divstyle1{
   background-color: rgba(2, 77, 5, 0.5);
   width: 550px;
-  height: 900px;
+  height: 750px;
   display: inline-block;
   margin-bottom: 30px;
   margin-top: 40px;
@@ -84,7 +86,7 @@ textarea{
 .divstyle4{
   background-color: rgba(2, 77, 5, 0.5);
   width: 550px;
-  height: 800px;
+  height: 750px;
   display: inline-block;
   margin-bottom: 30px;
   margin-top: 40px;
